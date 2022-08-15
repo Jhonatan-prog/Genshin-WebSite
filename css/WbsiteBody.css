@@ -1,0 +1,150 @@
+.page-wrap {
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    gap: 10px;
+
+    padding: 1em;
+    margin: 2em auto;
+    max-width: 1400px;
+}
+
+.Info-section {
+    background-color: var(--bg-c-section);
+    box-shadow: 3px 3px 10px black;
+}
+
+.Pitcture_lore {
+    background-color: var(--bg-c-section);
+    border: 2px solid var(--border-color);
+    box-shadow: 1px 1px 5px black;
+}
+
+.InfoExtra {
+    background-color: var(--bg-c-section);
+    box-shadow: 3px 3px 10px black;
+
+}
+
+/*Header section*/
+.Section-top-header {
+    font-weight: bold;
+    font-size: var(--fs-400);
+
+    background-color: var(--header_footer-color);
+    color: var(--font-color-inverse);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 0;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.Eula-icon {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.Eula-icon img {
+    margin: .2em;
+    border-radius: 50%;
+}
+
+.container-li{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 0;
+}
+
+.container-li li {
+    margin: 0 .5em;
+    cursor: pointer;
+}
+
+.Open-Menu,
+.Close-Menu {
+    display: none;
+}
+
+/*Media Query bar-navegation,removing social-media*/
+@media only screen and (max-width: 768px){
+    .Media-container,
+    .InfoExtra,
+    .Info-section {
+        display: none;
+    }
+    .page-wrap {
+        justify-content: center;
+        /*we have a problem here (it create a space in mobile).
+        The problem is the nav bar in Desktop 
+        (Dont worry about that with responsive wil be fine)*/
+        grid-template-columns: 98%;
+    }
+
+    /*Header section*/
+    .Section-top-header {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-navbar {
+       opacity: 0;
+       pointer-events: none;
+    }
+
+    .container-li{
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        flex-direction: column;
+        justify-content: center;
+        
+        height: 100%;
+        width: 100%;
+        margin: 0;
+
+        background-color: var(--header_footer-color);   
+        overflow-y: auto;
+    }
+
+    .container-li li {
+        margin: 3.2em 0;
+    }
+
+    .Container-OpenBtn {
+        position: relative;
+        height: 100%;
+    }
+
+    .Open-Menu,
+    .Close-Menu {
+        position: absolute;
+        right: 0;
+        
+        line-height: 60px;
+        font-size: calc(.6rem + var(--fs-600));
+
+        display: block;
+        
+        background: none;
+        border: none;
+        color: var(--font-color-inverse);
+    }
+
+    .Close-Menu {
+        top: 0;
+        z-index: 150;
+    }
+
+    /*script menu*/
+    .Open {
+        opacity: 1;
+        pointer-events: all;
+    }
+    .Close {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}

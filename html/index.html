@@ -5,20 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genhsin Info</title>
-    <link rel="stylesheet" href="/Genshin-WebSite/css/navbar.css"/>
-    <link rel="stylesheet" href="/Genshin-WebSite/css/main.css"/>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="shortcut icon" href="../Img/genshin-impact-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!--CSS links-->
+    <link rel="stylesheet" href="../css/main.css"/>
+    <link rel="stylesheet" href="../css/head-top.css"/>
+    <link rel="stylesheet" href="../css/WbsiteBody.css">
+    <!--Js links-->
+    <script defer src="../Js/menuBtn.js"></script>
 </head>
 <body>
-    <header>
-
+    <header class="Header-top-Main">
+        <div class="Icon-header top-header">
+            <img src="../Img/Paimon.png" alt="Paimon.png" width="70px" height="70px">
+        </div>
+        <div class="Name-Container top-header">
+            Genshin Impact
+        </div>
     </header>
+    <!--Social Media-->
+    <aside>
+        <div class="Media-container">
+            <ul>
+                <a href="#" target="_blank" class="Social-Media Youtube">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+                <a href="#" target="_blank" class="Social-Media Facebook">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <a href="#" target="_blank" class="Social-Media Twitch">
+                    <ion-icon name="logo-twitch"></ion-icon>
+                </a>
+                <a href="#" target="_blank" class="Social-Media Instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </ul>
+        </div>
+    </aside>
+    
+    <div class="page-wrap">
 
-    <section>
+        <!--This section is just for space 
+        cuse if possible Ill use a button-->
+        <section class="Info-section">
+            
+        </section>
+
+
+        <!--Main-->
+        <section class="Pitcture_lore">
+            <header class="Section-top-header">
+                <div class="Eula-icon">
+                    <img src="../Img/Eula.jpg" alt="Eula" width="45px" height="45px">
+                    <div>
+                        Eula
+                    </div>
+                </div>
+
+                <!--Problem with the code below 
+                the css grid take three 
+                divs instead one-->
+                <div class="Container-OpenBtn">
+                    <button class="Open-Menu" aria-label="Open Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+                </div>
+                
+                <nav class="container-navbar ">
+                    <button class="Close-Menu">
+                        <ion-icon name="close-outline" aria-label="Close Menu"></ion-icon>
+                    </button>
+                    <ul class="container-li">
+                        <li class="list-nav">Top</li>
+                        <li class="list-nav">Characters</li>
+                        <li class="list-nav">Content</li>
+                        <li class="list-nav">Others</li>
+                    </ul>
+                </nav>
+            </header>
+            <img src="" alt="">
+        </section>
         
-    </section>
+        <!--Other section(Ads, Info, etc)-->
+        <section class="InfoExtra">
+           
+        </section>
+    </div>
 
-    <footer>
-
-    </footer>
+    <!--Script to use Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
