@@ -2,8 +2,12 @@
     --font-color: black;
     --font-color-inverse: white;
     --header_footer-color: hsl(0, 0%, 15%);
+    --hr-bgcolor: hsl(0, 2%, 20%);
     --border-color: hsl(0, 2%, 36%);
     --bg-c-section: hsl(0, 7%, 97%);
+    --img-eulaResposive: clamp(25em, 4vw + 10em, 25em);
+
+    --fs-content-p: clamp(1.2rem, calc(3vw - 1rem), 1.3rem);
 
     --fs-600: 2rem;
     --fs-500: 1.2rem;
@@ -21,16 +25,16 @@ header {
 body {
     position: relative;
     
-    font-family: 'Open Sans', sans-serif;
-    font-size: var(--fs-500);
-    font-weight: 500;
-
-    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
-/*Font-size responsive*/
-@media only screen and (min-width: 48em){
+/*Font-size responsive(to computer)*/
+@media only screen and (min-width: 56em){
     :root{
+        --img-eulaResposive: clamp(14em, 4vw + 10em, 26em);
+
+        --fs-content-p: clamp(1.2rem, calc(3vw - 1rem), 1.3rem);
+
         --fs-600: 2.6rem;
         --fs-500: 1.5rem;
         --fs-400: clamp(1rem, calc(3vw - 1rem), 1.2rem);
@@ -44,4 +48,10 @@ li {
 
 ion-icon {
     cursor: pointer;
+}
+
+p {
+    font-size: var(--fs-content-p);
+    letter-spacing: 1px;
+    line-height: 1.6rem;
 }

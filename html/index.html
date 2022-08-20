@@ -7,13 +7,16 @@
     <title>Genhsin Info</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="shortcut icon" href="../Img/genshin-impact-logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!--CSS links-->
     <link rel="stylesheet" href="../css/main.css"/>
     <link rel="stylesheet" href="../css/head-top.css"/>
     <link rel="stylesheet" href="../css/WbsiteBody.css">
+    <link rel="stylesheet" href="../css/Contents-Section.css">
     <!--Js links-->
-    <script defer src="../Js/menuBtn.js"></script>
+    <script defer src="../Js/app.js"></script>
 </head>
 <body>
     <header class="Header-top-Main">
@@ -47,14 +50,14 @@
     <div class="page-wrap">
 
         <!--This section is just for space 
-        cuse if possible Ill use a button-->
+            cuse if possible Ill use a button-->
         <section class="Info-section">
-            
+                
         </section>
-
-
-        <!--Main-->
-        <section class="Pitcture_lore">
+            
+            
+        <!--Main(css = WbsiteBody)-->
+        <section class="main-section">
             <header class="Section-top-header">
                 <div class="Eula-icon">
                     <img src="../Img/Eula.jpg" alt="Eula" width="45px" height="45px">
@@ -62,18 +65,16 @@
                         Eula
                     </div>
                 </div>
+                
 
-                <!--Problem with the code below 
-                the css grid take three 
-                divs instead one-->
                 <div class="Container-OpenBtn">
-                    <button class="Open-Menu" aria-label="Open Menu">
+                    <button class="Open-Menu" id="openBtn" aria-label="Open Menu">
                         <ion-icon name="menu-outline"></ion-icon>
                     </button>
                 </div>
                 
-                <nav class="container-navbar ">
-                    <button class="Close-Menu">
+                <nav class="container-navbar">
+                    <button class="Close-Menu" id="closeBtn">
                         <ion-icon name="close-outline" aria-label="Close Menu"></ion-icon>
                     </button>
                     <ul class="container-li">
@@ -84,12 +85,59 @@
                     </ul>
                 </nav>
             </header>
-            <img src="" alt="">
+            
+                <button class="ContentBtn">
+                    <ion-icon name="chevron-down-sharp" aria-label="Open Index"></ion-icon>
+                </button>
+            
+            <div class="box-content">
+
+            </div>
+
+            <!--Top Section, eula-lore-->
+            <div class="container-EulaPiture">
+                <img src="../Img/BEula_img.jpg" alt="BEula" class="container-EulaPiture" width="100%" height="100%">
+            </div>
+
+            <div class="separator"></div>
+
+            <section>
+                <div class="container-lore">
+                    <h2>Eula Lore</h2>
+                    <p>Three prominent families once held importance in Mondstadt. Well, two of them are still important. One is the Ragnvindr family, which owns the Dawn Winery. The other is the Gunnhildr clan, leading the Knights of Favonius.</p>
+                    <p>The third is the Lawrence family, fallen nobles who once ruled Mondstadt. After the events that removed the aristocracy’s power, the Lawrences took it as a slight to their family name. Since then, they’ve been obsessed with reclaiming their past glory and ruling Mond once more.</p>
+                    <p>Of course, that doesn’t sit well with the rest of the citizens. That left the family as stuck-up, snobby people who can’t let go of the past. Everybody hates them for what they’ve done, and the family never adapted to the changes Mond experienced over time. Except for one, that is.</p>
+                    <p>Eula is the black sheep of the Lawrence family. Though the rest of her kin despise the Knights (though differently than Diluc does), she went and joined the organization. It’s her way of reclaiming the prestige of their family name, even if the rest don’t understand.</p>
+                    <p>Though she speaks of claiming vengeance for the smallest of slights, it’s how she communicates to others. Past the icy demeanor and claims of vengeance, she’s a reliable knight and a kind person.</p>
+                    <p>Jean wouldn’t trust an unreliable person after all. Just the fact that Eula made it to captain rank in just a few years speaks of her ability and reliability. She did all that despite the hate and hostility directed at her.</p>
+                    <p>Ever so slowly, the citizens of Mond start to see past her bluster about vengeance and her family name. Being friends with Amber helped, but her talent and achievements mostly revealed the most. Though she’s still misunderstood by most people (including her own family), it doesn’t deter her from her chosen path.</p>
+                    <p>One thing you wouldn’t expect from her is to be a good cook. Because of their fallen status, Eula’s education spanned all matters of housework. The reason was that “they can’t trust servants to reach the quality of service a Lawrence needs” or something like that. At any rate, this translated to Eula’s skill in the kitchen.</p>
+                    <p>Consequently, her company has the best rations out of all branches of the Knights. Sure, the company cook substituted some ingredients for a less perishable one, but the result was still tasty. The knights under her command wonder how tasty the original could be if the ‘lesser’ version were already so good. Unfortunately, only those she grudgingly(?) accepts will have the honor to taste one of her dishes.</p>
+                    <p>Her swordsmanship has a rhythm and looks more graceful because of her love of dancing. It was the only break Eula had from the endless tutors and education that made up her childhood. She never practices it anymore, but it shows through her movements when fighting.</p>
+                </div>
+            </section>
+
+            <hr class="hr-separator">
+
+            <!--...-->
+            <section>
+                <h2>Skills</h2>
+                <div>
+                    <table>
+                        <th>
+
+                        </th>
+                        <td>
+                            
+                        </td>
+                    </table>
+                </div>
+            </section>
         </section>
         
         <!--Other section(Ads, Info, etc)-->
         <section class="InfoExtra">
-           
+            
         </section>
     </div>
 

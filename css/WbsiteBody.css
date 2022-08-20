@@ -1,6 +1,6 @@
 .page-wrap {
     display: grid;
-    grid-template-columns: 1fr 50% 1fr;
+    grid-template-columns: 20% 52% 1fr;
     gap: 10px;
 
     padding: 1em;
@@ -13,16 +13,19 @@
     box-shadow: 3px 3px 10px black;
 }
 
-.Pitcture_lore {
+.main-section {
     background-color: var(--bg-c-section);
-    border: 2px solid var(--border-color);
+    outline: 2px solid var(--border-color);
     box-shadow: 1px 1px 5px black;
+}
+
+.main-section section{
+    padding: .6em;
 }
 
 .InfoExtra {
     background-color: var(--bg-c-section);
     box-shadow: 3px 3px 10px black;
-
 }
 
 /*Header section*/
@@ -69,7 +72,7 @@
 }
 
 /*Media Query bar-navegation,removing social-media*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 56em){
     .Media-container,
     .InfoExtra,
     .Info-section {
@@ -77,9 +80,6 @@
     }
     .page-wrap {
         justify-content: center;
-        /*we have a problem here (it create a space in mobile).
-        The problem is the nav bar in Desktop 
-        (Dont worry about that with responsive wil be fine)*/
         grid-template-columns: 98%;
     }
 
@@ -89,8 +89,8 @@
     }
 
     .container-navbar {
-       opacity: 0;
-       pointer-events: none;
+        z-index: 250;
+        display: none;
     }
 
     .container-li{
@@ -132,19 +132,14 @@
         border: none;
         color: var(--font-color-inverse);
     }
-
+    
     .Close-Menu {
         top: 0;
         z-index: 150;
     }
 
     /*script menu*/
-    .Open {
-        opacity: 1;
-        pointer-events: all;
-    }
-    .Close {
-        opacity: 0.5;
-        pointer-events: none;
+    .active {
+        display: block;
     }
 }
