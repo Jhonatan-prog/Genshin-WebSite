@@ -105,7 +105,7 @@
         width: 100%;
         margin: 0;
 
-        background-color: var(--header_footer-color);   
+        background-color: var(--header_footer-color);
         overflow-y: auto;
     }
 
