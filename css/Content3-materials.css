@@ -1,0 +1,92 @@
+.materials-title {
+    width: 150px;
+}
+
+.container-materials {
+    position: relative;
+    
+    padding: 1.1em 0;
+    border: 2px solid var(--header_footer-color);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*if possible reuse this*/
+.container-materials::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 25px;
+    background-color: var(--header_footer-color);
+}
+
+.pj-materials-subtitles {
+    width: 60%;
+    min-width: 230px;
+    line-height: 35px;
+    font-weight: 500;
+    margin: 1.1em 0 0;
+
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    background-color: var(--header_footer-color);
+    color: var(--font-color-inverse);
+    align-self: flex-start;
+}
+
+.Text-info-under-subtitles {
+    align-self: flex-start;
+}
+
+.eula-pj-materials {
+    width: 94%;
+    margin-bottom: 1.2em;
+    border: 2px solid var(--header_footer-color);
+}
+
+.table-Materials {
+    width: 100%;
+    height: 100%;
+    box-shadow: var(--box-shdw);
+}
+
+.table-Materials thead th div,
+.table-Materials tbody tr div {
+    font-weight: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ascension-materials {
+    width: 80px;
+    height: 80px;
+}
+
+.materials-number {
+    width: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.gold-needed {
+    display: flex;
+    align-self: flex-start;
+    margin-left: .6em;
+}
+
+.coins-gold {
+    width: 30px;
+    height: 30px;
+}
+
+.gold-needed p{
+    margin: 0;
+    align-self: flex-end;
+}
