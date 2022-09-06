@@ -14,7 +14,9 @@
     <link rel="stylesheet" href="../css/main.css"/>
     <link rel="stylesheet" href="../css/head-top.css"/>
     <link rel="stylesheet" href="../css/WbsiteBody.css">
-    <link rel="stylesheet" href="../css/Contents-Section.css">
+    <link rel="stylesheet" href="../css/Content1-lore.css">
+    <link rel="stylesheet" href="../css/Content2-talents.css">
+    <link rel="stylesheet" href="../css/Content3-materials.css">
     <!--Js links-->
     <script defer src="../Js/app.js"></script>
 </head>
@@ -120,19 +122,430 @@
             <hr class="hr-separator">
 
             <!--...-->
-            <section>
-                <h2>Skills</h2>
-                <div>
-                    <table>
-                        <th>
-
-                        </th>
-                        <td>
-                            
-                        </td>
-                    </table>
+            <section class="Section-container-Talents Mains_Sections">
+                <div class="containers-title">
+                    <h2>Talents</h2>
+                </div>
+                
+                <div class="container-eula-Talents">
+                    <!--img, contents-->
+                    <div class="eula-talent1 talents">
+                        <!--table1, contents-->
+                        <table class="table-talents">
+                            <thead>
+                                <tr>
+                                    <th>Icon</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-talents-body">
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <img src="../Img/icons/Claymore_Cryo-talent1.webp" alt="Claymore" class="talent1-img">
+                                        </a>
+                                    </td>
+                                    <td>Favonius Bladework - Edel</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                       <b>Normal Attack</b> <br>
+                                        Perform up to 5 consecutive strikes.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <b>Charged Attack</b> <br>
+                                        Drains Stamina over time to perform continuous slashes.
+                                        At the end of the sequence, perform a more powerful slash.
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <b>Plunging Attack</b> <br>
+                                        Plunges from mid-air to strike the ground, damaging opponents 
+                                        along the path and dealing AoE DMG upon impact.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="eula-talent2 talents">
+                        <table class="table-talents">
+                            <thead>
+                                <tr>
+                                    <th>Icon</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-talents-body">
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <img src="../Img/icons/Talent_Icetide_Vortex-talent2.webp" alt="talent2" class="talent1-img">
+                                        </a>
+                                    </td>
+                                    <td>Icetide Vortex</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                       <b>Press</b> <br>
+                                       Slashes swiftly, dealing Cryo DMG.
+                                       When it hits an opponent, Eula gains a stack of Grimheart that stacks up to 2 times. 
+                                       These stacks can only be gained once every 0.3s.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <b>Grimheart</b> <br>
+                                        Increases Eula's resistance to interruption and DEF.
+                                     </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <b>Hold</b> <br>
+                                        Wielding her sword, Eula consumes all the stacks of Grimheart and lashes forward, dealing AoE Cryo DMG to opponents in front of her.
+                                        If Grimheart stacks are consumed, surrounding opponents will have their Physical RES and Cryo RES decreased.
+                                        Each consumed stack of Grimheart will be converted into an Icewhirl Brand that deals Cryo DMG to nearby opponents.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="eula-talent3 talents">
+                        <table class="table-talents">
+                            <thead>
+                                <tr>
+                                    <th>Icon</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-talents-body">
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <img src="../Img/icons/Talent_Glacial_Illumination-talent3.webp" alt="talent3" class="talent1-img">
+                                        </a>
+                                    </td>
+                                    <td>Glacial Illumination</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        Brandishes her greatsword, dealing Cryo DMG to nearby opponents and creating a Lightfall Sword that follows her around for a duration of up to 7s.
+                                        While present, the Lightfall Sword increases Eula's resistance to interruption. When Eula's own Normal Attack, Elemental Skill, and Elemental 
+                                        Burst deal DMG to opponents, they will charge the Lightfall Sword, which can gain an energy stack once every 0.1s.
+                                        Once its duration ends, the Lightfall Sword will descend and explode violently, dealing Physical DMG to nearby opponents.
+                                        This DMG scales on the number of energy stacks the Lightfall Sword has accumulated.
+                                        If Eula leaves the field, the Lightfall Sword will explode immediately.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="eula-talent4 talents">
+                        <table class="table-talents">
+                            <thead>
+                                <tr>
+                                    <th>Icon</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-talents-body">
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <img src="../Img/icons/Talent_Roiling_Rime-talent4.webp" alt="talent4" class="talent1-img">
+                                        </a>
+                                    </td>
+                                    <td>Roiling Rime</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        If 2 stacks of Grimheart are consumed upon unleashing the Holding Mode of Icetide Vortex, 
+                                        a Shattered Lightfall Sword will be created that will explode immediately, dealing 50% of 
+                                        the basic Physical DMG dealt by a Lightfall Sword created by Glacial Illumination.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="eula-talent5 talents">
+                        <table class="table-talents">
+                            <thead>
+                                <tr>
+                                    <th>Icon</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-talents-body">
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <img src="../Img/icons/Talent_Wellspring_of_War-Lust-talent5.webp" alt="talent5" class="talent1-img">
+                                        </a>
+                                    </td>
+                                    <td>Wellspring of War-Lust</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        When Glacial Illumination is cast, the CD of Icetide Vortex is reset and Eula gains 1 stack of Grimheart.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="eula-talent6 talents">
+                        <table class="table-talents">
+                            <thead>
+                                <tr>
+                                    <th>Icon</th>
+                                    <th>Name</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-talents-body">
+                                <tr>
+                                    <td>
+                                        <a>
+                                            <img src="../Img/icons/Talent_Aristocratic_Introspection-talent6.webp" alt="talent6" class="talent1-img">
+                                        </a>
+                                    </td>
+                                    <td>Aristocratic Introspection</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        When Eula crafts Character Talent Materials, she has a 10% chance to receive double the product.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
+
+            <hr class="hr-separator">
+
+            <!--materials-->
+            <section class="Section-container-Materials Mains_Sections">
+                <div class="materials-title containers-title">
+                    <h2>Materials</h2>
+                </div>
+                <div class="container-materials">
+                    <h3 class="pj-materials-subtitles">Characters Materials</h3>
+                    <p class="Text-info-under-subtitles">
+                        These are all the ascension materials you'll need to 
+                        level Eula all the way to the current cap of level 90.
+                    </p>
+                    <div class="eula-pj-materials">
+                        <table class="table-Materials">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Damaged_Mask1.webp" alt="Item_Damaged_Mask1.webp" class="ascension-materials bug">
+                                            <div class="materials-number">18</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Stained_Mask2.webp" alt="Item_Stained_Mask2.webp" class="ascension-materials">
+                                            <div class="materials-number">30</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Ominous_Mask3.webp" alt="Item_Ominous_Mask3.webp" class="ascension-materials">
+                                            <div class="materials-number">36</div>
+                                        </div>
+                                    </tr>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="../Img/character-materials/Crystalline_Bloom.webp" alt="Crystalline_Bloom.png" class="ascension-materials">
+                                            <div class="materials-number">46</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Dandelion_Seed.webp" alt="Item_Dandelion_Seed.webp" class="ascension-materials">
+                                            <div class="materials-number">168</div>
+                                        </div>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <!--the img is the container itself-->
+                                        <div>
+                                            <div><img src="../Img/character-materials/jade_shivada.webp" alt="jade_shivada.webp" class="ascension-materials"> <p>1</p></div>
+                                            <div><img src="../Img/character-materials/Object_jade_shivada.webp" alt="Jade_shivada_big.webp" class="ascension-materials"> <p>9</p></div>
+                                            <div><img src="../Img/character-materials/Object_jade_shivada-3.webp" alt="jade_shivada.webp" class="ascension-materials"> <p>9</p></div>
+                                            <div><img src="../Img/character-materials/Object_Jade_shivada_big.webp" alt="Jade_shivada_big.webp" class="ascension-materials"> <p>6</p></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="gold-needed"><img src="../Img/gold-coin-removebg-preview.png" alt="gold-coin.jpg" class="coins-gold"><p>Gold needed: 420K</p></div>
+
+                    <h3 class="pj-materials-subtitles">Talents Materials</h3>
+                    <p class="Text-info-under-subtitles">In order to fully level Eula's talents you'll need:</p>
+                    <div class="eula-pj-materials">
+                        <table class="table-Materials">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Damaged_Mask1.webp" alt="Item_Damaged_Mask1.webp" class="ascension-materials bug">
+                                            <div class="materials-number">18</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Stained_Mask2.webp" alt="Item_Stained_Mask2.webp" class="ascension-materials">
+                                            <div class="materials-number">66</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Ominous_Mask3.webp" alt="Item_Ominous_Mask3.webp" class="ascension-materials">
+                                            <div class="materials-number">93</div>
+                                        </div>
+                                    </tr>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="../Img/talents-materials/Item_Teachings_of_Resistance1.webp" alt="Item_Teachings_of_Resistance1" class="ascension-materials">
+                                            <div class="materials-number">9</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../Img/talents-materials/Item_Guide_to_Resistance2.webp" alt="Item_Guide_to_Resistance2" class="ascension-materials">
+                                            <div class="materials-number">63</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../Img/talents-materials/Item_Philosophies_of_Resistance3.webp" alt="Item_Philosophies_of_Resistance3" class="ascension-materials">
+                                            <div class="materials-number">114</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <!--the img is the container itself-->
+                                        <div>
+                                            <div><img src="../Img/talents-materials/Dragon_lord's-crown.webp" alt="jade_shivada.webp" class="ascension-materials"> <p>18</p></div>
+                                            <div><img src="../Img/talents-materials/Item_Crown_of_Insight.webp" alt="Jade_shivada_big.webp" class="ascension-materials"> <p>3</p></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="gold-needed"><img src="../Img/gold-coin-removebg-preview.png" alt="gold-coin.jpg" class="coins-gold"><p>Gold needed: 4.950.000</p></div>
+
+                    <h3 class="pj-materials-subtitles">Best Weapon Materials</h3>
+                    <p class="Text-info-under-subtitles">If you want to level up the best Eula's weapon you'll need:</p>
+                    <div class="eula-pj-materials">
+                        <table class="table-Materials">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Damaged_Mask1.webp" alt="Item_Damaged_Mask1.webp" class="ascension-materials bug">
+                                            <div class="materials-number">15</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Stained_Mask2.webp" alt="Item_Stained_Mask2.webp" class="ascension-materials">
+                                            <div class="materials-number">23</div>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        <div>
+                                            <img src="../Img/character-materials/Item_Ominous_Mask3.webp" alt="Item_Ominous_Mask3.webp" class="ascension-materials">
+                                            <div class="materials-number">27</div>
+                                        </div>
+                                    </tr>
+                                </th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div>
+                                            <img src="../Img/best-weponMaterials/Item_Heavy_Horn1.webp" alt="Item_Heavy_Horn1.webp" class="ascension-materials">
+                                            <div class="materials-number">23</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../Img/best-weponMaterials/Item_Black_Bronze_Horn2.webp" alt="Item_Black_Bronze_Horn2.webp" class="ascension-materials">
+                                            <div class="materials-number">27</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <img src="../Img/best-weponMaterials/Item_Black_Crystal_Horn3.webp" alt="Item_Black_Crystal_Horn3.webp" class="ascension-materials">
+                                            <div class="materials-number">41</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <!--the img is the container itself-->
+                                        <div>
+                                            <div><img src="../Img/best-weponMaterials/Item_Tile_of_Decarabian_Tower.webp" alt="Item_Tile_of_Decarabian_Tower.webp" class="ascension-materials"> <p>5</p></div>
+                                            <div><img src="../Img/best-weponMaterials/Item_Debris_of_Decarabian_City2.webp" alt="Item_Debris_of_Decarabian_City2.webp" class="ascension-materials"> <p>14</p></div>
+                                            <div><img src="../Img/best-weponMaterials/Item_Fragment_of_Decarabian_Epic3.webp" alt="Item_Fragment_of_Decarabian_Epic3.webp" class="ascension-materials"> <p>14</p></div>
+                                            <div><img src="../Img/best-weponMaterials/Item_Scattered_Piece_of_Decarabian_Dream2.webp" alt="Item_Scattered_Piece_of_Decarabian_Dream4.webp" class="ascension-materials"> <p>6</p></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="gold-needed"><img src="../Img/gold-coin-removebg-preview.png" alt="gold-coin.jpg" class="coins-gold"><p>Gold needed: 255K</p></div>
+
+                    <h3 class="pj-materials-subtitles">Experience And Rare Items</h3>
+                    <p class="Text-info-under-subtitles">To get Eula to level 90 you will need:</p>
+                    <div class="eula-pj-materials">
+                        <table class="table-Materials">
+                            <tbody>
+                                <tr>
+                                    <td colspan="3">
+                                        <div>
+                                            <div><img src="../Img/exp-Books/Item_Wanderer_Advice1.webp" alt="Item_Wanderer_Advice1.webp" class="ascension-materials"> <p>12</p></div>
+                                            <div><img src="../Img/exp-Books/Item_Adventurer_Experience2.webp" alt="Item_Adventurer_Experience2.webp" class="ascension-materials"> <p>15</p></div>
+                                            <div><img src="../Img/exp-Books/Item_Hero_Wit3.webp" alt="Item_Hero_Wit3.webp" class="ascension-materials"> <p>414 </p></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="gold-needed"><img src="../Img/gold-coin-removebg-preview.png" alt="gold-coin.jpg" class="coins-gold"><p>Gold needed: 600K</p></div>
+                </div>
+            </section>
+
+            <hr class="hr-separator">
+
+            <section class="Section-container-Materials Mains_Sections">
+                <div class="materials-title containers-title">
+                    <h2>Weapons</h2>
+                </div>
+                <div class="container-materials">
+                </div>
+            </section>
+            
         </section>
         
         <!--Other section(Ads, Info, etc)-->

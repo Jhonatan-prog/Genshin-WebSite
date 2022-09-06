@@ -5,6 +5,7 @@
     --hr-bgcolor: hsl(0, 2%, 20%);
     --border-color: hsl(0, 2%, 36%);
     --bg-c-section: hsl(0, 7%, 97%);
+    --box-shdw: 2px 3px 5px black;
     --img-eulaResposive: clamp(25em, 4vw + 10em, 25em);
 
     --fs-content-p: clamp(1.2rem, calc(3vw - 1rem), 1.3rem);
@@ -51,7 +52,12 @@ ion-icon {
 }
 
 p {
-    font-size: var(--fs-content-p);
+    font-size: calc(var(--fs-content-p) - .2rem);
     letter-spacing: 1px;
     line-height: 1.6rem;
+}
+
+th, td {
+    line-height: 1.35em;
+    border: 1px solid;
 }
