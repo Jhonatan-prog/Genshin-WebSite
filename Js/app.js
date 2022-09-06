@@ -3,18 +3,16 @@ const openMenuBtn = document.getElementById("openBtn");
 const closeMenuBtn = document.getElementById("closeBtn");
 const Menu = document.querySelector(".container-navbar");
 
-function ButtonsMenu(){
-
-    openMenuBtn.addEventListener('click', () => {
-        Menu.classList.toggle('active')
-    })
+function infiniteLoop(){
+    function eventOpen(){
+        Menu.classList.toggle('active');
+    }  
+    function eventClose(){
+        Menu.classList.toggle('active');
+    }
     
-    closeMenuBtn.addEventListener('click', () => {
-        Menu.classList.toggle('active')
-    })
-
+    openMenuBtn.addEventListener('click', eventOpen);
+    closeMenuBtn.addEventListener('click', eventClose);
 }
 
-ButtonsMenu()
-
-// Indexers code (contents)
+infiniteLoop()
