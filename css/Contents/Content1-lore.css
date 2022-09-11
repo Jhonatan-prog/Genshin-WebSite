@@ -30,6 +30,10 @@
     display: block;
 }
 
+.container-lore {
+    line-height: 1.6rem;
+}
+
 .separator {
     height: 60px;
     background-color: var(--header_footer-color);
@@ -42,7 +46,7 @@
     border-radius: 50%;
 }
 
-@media only screen and (min-width: 56em){
+@media only screen and (min-width: 46em){
     .ContentBtn,
     .box-content  {
         display: none;

@@ -1,0 +1,70 @@
+.container-weapons {
+    padding: 2em 0;
+}
+
+.containerWpons-Text {
+    width: 95%;
+    margin-top: 2em;
+    box-shadow: var(--box-shdw);
+}
+
+.container-img-weapons {
+    width: 100%;
+    
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+}
+
+.weaponIMG {
+    padding: .8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: var(--box-weapon-tables);
+}
+
+.weaponIMG h4 {
+    margin: 1em 0 0 0;
+}
+
+.features {
+    border: var(--box-weapon-tables);
+}
+
+.container-weapon-skills {
+    position: relative;
+    padding: .7em;
+    border: var(--box-weapon-tables);
+}
+
+.container-weapon-skills::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 20px;
+    background-color: var(--header_footer-color);
+}
+
+.weapon-images {
+    width: 80px;
+    height: 80px;
+    
+    border: 2px solid gray;
+    border-radius: 10px;
+    box-shadow: inset var(--box-shdw), 2px 2px 5px gray;
+}
+
+.features-Table {
+    height: 100%;
+}
+
+@media only screen and (min-width: 46.1em){
+    .container-img-weapons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
