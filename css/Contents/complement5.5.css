@@ -1,0 +1,94 @@
+/*box under artifact article*/
+.priority-artifacts-boxCont {
+    width: 92%;
+    max-width: 310px;
+    margin: auto;
+}
+
+.priority-artifacts-boxCont h3{
+    margin: 0;
+    text-align: center;
+    color: var(--font-color-inverse);
+    background-color: var(--header_footer-color);
+}
+
+.container-main_Sub-Stats {
+    padding-bottom: .5em;
+    border: 2px solid var(--header_footer-color);
+}
+
+.eula-poting-img {
+    position: relative;
+    top: 0;
+    left: -10px;
+    
+    width: 85px;
+    height: 85px;
+    transform: rotate(85deg);
+}
+
+.container-table-stats {
+    position: relative;
+
+    width: 90%;
+    margin: auto;
+
+    background-color: white;
+    border-top: 5px solid var(--header_footer-color);
+    border-bottom: 5px solid var(--header_footer-color);
+}
+
+.container-table-stats h3{
+    position: absolute;
+    top: -15px;
+    right: 18px;
+    
+    width: 40%;
+    border-radius: 20px;
+}
+
+.container-table-stats table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.container-table-stats table th {
+    width: 50%;
+}
+
+.container-main-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-statstext {
+    margin: .45em 0;
+    display: flex;
+    align-items: center;
+}
+
+.stats-img {
+    width: 20px;
+    height: 20px;
+}
+
+.container-statstext  p,
+.substats-font-size {
+    font-size: .7rem;
+}
+
+/*Table + Desktop*/
+@media only screen and (min-width: 40em) {
+    .priority-artifacts-boxCont {
+        position: relative;
+        
+        width: 305px;
+        margin-left: 2.2em;
+        padding: .5em;
+    
+        border: 2px solid var(--header_footer-color);
+        border-top: none;
+    }
+}

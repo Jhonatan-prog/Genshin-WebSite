@@ -1,0 +1,23 @@
+.best-comp-img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.table-comp {
+    width: 95%;
+    height: 500px;
+}
+
+.HTuse-container h2 {
+    margin-bottom: 0;
+}
+
+.HTuse-list {
+    margin-top: 0;
+    padding: 24px;
+}
+
+.HTuse-list li {
+    margin-bottom: .6em;
+}

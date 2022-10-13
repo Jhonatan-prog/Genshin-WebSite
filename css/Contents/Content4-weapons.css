@@ -1,10 +1,21 @@
+.subtitle-content {
+    justify-self: flex-start;
+    margin: 1em 0 0 calc(.5em + .71vw);
+    border-left: 4px solid var(--header_footer-color);
+    font-size: var(--fs-titles);
+}
+
+.subtitle-content h3 {
+    margin: .5em 0 .2em .25em;
+}
+
 .container-weapons {
     padding: 2em 0;
 }
 
 .containerWpons-Text {
     width: 95%;
-    margin-top: 2em;
+    margin-top: 1.4em;
     box-shadow: var(--box-shdw);
 }
 
@@ -63,8 +74,11 @@
     height: 100%;
 }
 
-@media only screen and (min-width: 46.1em){
+@media only screen and (min-width: 40em){
     .container-img-weapons {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 40% 1fr;
+    }
+    .best-weapons-tittle {
+        margin: 1em 0 0 clamp(17px, calc(.9em - 1vw), 18px);
     }
 }

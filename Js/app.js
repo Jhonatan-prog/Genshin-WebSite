@@ -1,18 +1,15 @@
 // Menu code
 const openMenuBtn = document.getElementById("openBtn");
 const closeMenuBtn = document.getElementById("closeBtn");
-const Menu = document.querySelector(".container-navbar");
+const Menu = document.querySelector(".container-li-menu")
 
-function infiniteLoop(){
-    function eventOpen(){
-        Menu.classList.toggle('active');
-    }  
-    function eventClose(){
-        Menu.classList.toggle('active');
-    }
-    
-    openMenuBtn.addEventListener('click', eventOpen);
-    closeMenuBtn.addEventListener('click', eventClose);
+function MenuCode() {
+    openMenuBtn.addEventListener('click', () => {
+        Menu.classList.toggle('transition');
+    })
+    closeMenuBtn.addEventListener('click', () => {
+        Menu.classList.toggle('transition');
+    }) 
 }
 
-infiniteLoop()
+MenuCode();

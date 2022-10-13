@@ -25,12 +25,11 @@ four sections and modife them at once)
 .container-in-sections {
     position: relative;
     
-    padding: .25em;
+    padding: .65em;
     border: 2px solid var(--header_footer-color);
     
     display: grid;
     justify-items: center;
-    grid-template-rows: repeat(4, auto);
 }
 
 .container-in-sections::before {
@@ -45,6 +44,7 @@ four sections and modife them at once)
 }
 
 .title-sections {
+    letter-spacing: 1.4px;
     color: var(--font-color-inverse);
 }
 
